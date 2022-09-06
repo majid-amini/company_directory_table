@@ -8,6 +8,31 @@
     <title>Document</title>
 </head>
 <body>
-    <div class="bg-black">test text</div>
+    <div class="total grid grid-cols-3 w-full">
+        <div class="total_left bg-red-500 p-2 h-screen">
+            <form class="flex flex-col gap-5 px-4" action="">
+                <div class="flex flex-col" >
+                    <h3>Add New Item</h3>
+                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit.</p>
+                </div>
+                <div class="company_name flex flex-col">
+                    <label for="">Company name</label>
+                    <input type="text" name="" id="">
+                </div>
+                <div class="company_state flex flex-col">
+                    <label for="">Company state</label>
+                    <input type="text" name="" id="">
+                </div>
+                <div class="company_employees flex flex-col">
+                    <label for="">Company employees</label>
+                    <input type="text" name="" id="">
+                </div>
+                <div>
+                    <button class="bg-[#0F273C] text-white p-2 w-full rounded-md">Add Item</button>
+                </div>
+            </form>
+        </div>
+        <div class="total_right bg-red-200 col-span-2 p-2">right side</div>
+    </div>
 </body>
 </html>
