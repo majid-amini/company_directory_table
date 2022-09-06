@@ -19,4 +19,8 @@ addButton.addEventListener('click',(e) => {
         <i class="fa-solid fa-trash"></i>
     </td>
     </tr>
-    `})
+    `
+    nameInput.value = ''
+    stateInput.value = ''
+    employeesInput.value = ''
+})
