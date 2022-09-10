@@ -1,58 +1,86 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link rel="stylesheet" href="style.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+      integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="style.css" />
     <title>Document</title>
-</head>
-<body>
-    <div class="total bg-[#F8F9FD] grid grid-cols-3 w-full border-t-8 rounded-t-md border-black">
-        <div class="total_left bg-[#F8F9FD] p-2 h-screen">
-            <form class="flex flex-col gap-5 px-4" action="">
-                <div class="flex flex-col" >
-                    <h3 class="font-semibold">Add New Item</h3>
-                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit.</p>
-                </div>
-                <div class="company_name flex flex-col">
-                    <label for="">Company name</label>
-                    <input class="p-1" placeholder="eg.Netflix.Inc" type="text" name="" id="">
-                </div>
-                <div class="company_state flex flex-col">
-                    <label for="">Company state</label>
-                    <input class="p-1" placeholder="eg.Florida" type="text" name="" id="">
-                </div>
-                <div class="company_employees flex flex-col">
-                    <label for="">Company employees</label>
-                    <input class="p-1" placeholder="eg.20,345" type="number" name="" id="">
-                </div>
-                <div>
-                    <button class="add_btn bg-[#0F273C] text-white p-2 w-full rounded-md">Add Item</button>
-                </div>
-            </form>
+  </head>
+  <body>
+    <div
+      class="total bg-[#F8F9FD] grid grid-cols-3 w-full border-t-8 rounded-t-md border-black"
+    >
+      <div class="total_left bg-[#F8F9FD] p-2 h-screen">
+        <form class="flex flex-col gap-5 px-4" action="">
+          <div class="flex flex-col">
+            <h3 class="font-semibold">Add New Item</h3>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit.</p>
+          </div>
+          <div class="company_name flex flex-col">
+            <label for="">Company name</label>
+            <input
+              class="p-1"
+              placeholder="eg.Netflix.Inc"
+              type="text"
+              name=""
+              id=""
+            />
+          </div>
+          <div class="company_state flex flex-col">
+            <label for="">Company state</label>
+            <input
+              class="p-1"
+              placeholder="eg.Florida"
+              type="text"
+              name=""
+              id=""
+            />
+          </div>
+          <div class="company_employees flex flex-col">
+            <label for="">Company employees</label>
+            <input
+              class="p-1"
+              placeholder="eg.20,345"
+              type="number"
+              name=""
+              id=""
+            />
+          </div>
+          <div>
+            <button
+              class="add_btn bg-[#0F273C] text-white p-2 w-full rounded-md"
+            >
+              Add Item
+            </button>
+          </div>
+        </form>
+      </div>
+      <div class="total_right col-span-2 p-2">
+        <div class="bg-white p-2 rounded-t-md">
+          <h3 class="font-semibold">Company directory</h3>
+          <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit.</p>
         </div>
-        <div class="total_right col-span-2 p-2">
-            <div class="bg-white p-2 rounded-t-md">
-                <h3 class="font-semibold">Company directory</h3>
-                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit.</p>
-            </div>
-            <table class="w-full">
-                <thead class="bg-[#F8F9FD] w-full px-2">
-                    <tr>
-                    <td>name</td>
-                    <td class="w-80">state</td>
-                    <td>employees</td>
-                    <td></td>
-                    </tr>
-                </thead>
-                <tbody>
-              
-                </tbody>
-            </table>
-        </div>
+        <table class="w-full">
+          <thead class="bg-[#F8F9FD] w-full px-2 hidden">
+            <tr>
+              <td>name</td>
+              <td class="w-80">state</td>
+              <td>employees</td>
+              <td></td>
+            </tr>
+          </thead>
+          <tbody></tbody>
+        </table>
+      </div>
     </div>
     <script src="App.js"></script>
-</body>
+  </body>
 </html>

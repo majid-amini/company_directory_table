@@ -6,6 +6,7 @@ const stateInput = document.querySelector(".company_state input");
 const employeesInput = document.querySelector(".company_employees input");
 const addButton = document.querySelector(".add_btn");
 const table = document.querySelector("tbody");
+const tableHead = document.querySelector("thead");
 const deleteBtn = document.querySelector(".fa-trash");
 //Event Listeners
 addButton.addEventListener("click", addItem);
@@ -16,6 +17,7 @@ function addItem(event) {
   //prevnt form from submitting
   event.preventDefault();
   //appending to table tag
+  tableHead.classList.remove("hidden");
   table.innerHTML += `
         <tr class="bg-white border-b">
         <td class="p-1">
@@ -45,6 +47,10 @@ function deleteEdit(e) {
   //delete item
   if (item.classList[1] === "fa-trash") {
     item.parentElement.parentElement.remove();
+    //table disappearing codes
+    if (table.innerText.length == 0) {
+      tableHead.classList.add("hidden");
+    }
   }
 
   //edit item for edit icon
